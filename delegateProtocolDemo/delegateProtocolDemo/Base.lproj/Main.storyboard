@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="delegateProtocolDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bulb1" translatesAutoresizingMaskIntoConstraints="NO" id="FsM-vx-Kkj">
+                                <rect key="frame" x="87" y="348" width="240" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="d2e-0m-g1w"/>
+                                    <constraint firstAttribute="height" constant="200" id="d4Q-95-Ynf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FsM-vx-Kkj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="coJ-nY-Wqo"/>
+                            <constraint firstItem="FsM-vx-Kkj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wuz-ve-aQE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bulbImageView" destination="FsM-vx-Kkj" id="Tcz-SP-hk2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="50.892857142857139"/>
+        </scene>
+        <!--Switch View Controller-->
+        <scene sceneID="a0R-Xt-yp8">
+            <objects>
+                <viewController storyboardIdentifier="SwitchViewController" id="R3p-D7-zJV" customClass="SwitchViewController" customModule="delegateProtocolDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EmT-tz-IjH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="abR-fe-4Qb">
+                                <rect key="frame" x="182.5" y="432.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchToggled:" destination="R3p-D7-zJV" eventType="valueChanged" id="4RB-Vu-IOi"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kk3-hf-fbK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="abR-fe-4Qb" firstAttribute="centerX" secondItem="EmT-tz-IjH" secondAttribute="centerX" id="c73-G1-9Ka"/>
+                            <constraint firstItem="abR-fe-4Qb" firstAttribute="centerY" secondItem="EmT-tz-IjH" secondAttribute="centerY" id="tnd-fl-hpv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="switchView" destination="abR-fe-4Qb" id="jMf-eN-zTR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q7Z-yZ-VPL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="731" y="61"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bulb1" width="74" height="74"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
